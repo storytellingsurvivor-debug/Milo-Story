@@ -1,13 +1,15 @@
-# Milo SEO Landing Page (GitHub Pages)
+# Milo SEO Bilingual Landing Pages (GitHub Pages)
 
-This folder contains a standalone, single-page SEO landing page for the Milo ecosystem.
+This folder contains bilingual SEO landing pages for the Milo ecosystem.
 
 ## Files Included
 
-- `index.html`: long-form English page with semantic HTML, inline CSS, metadata, and JSON-LD
+- `index.html`: root page (`x-default`) with links to language pages
+- `en/index.html`: full English SEO page
+- `fr/index.html`: full French SEO page
 - `favicon-forever.ico`: browser tab icon used by the landing page
 - `robots.txt`: crawler directives with sitemap reference
-- `sitemap.xml`: single-URL sitemap for the landing page
+- `sitemap.xml`: sitemap covering root, EN, and FR URLs
 
 ## Content Outline and Keyword Map
 
@@ -44,15 +46,20 @@ This folder contains a standalone, single-page SEO landing page for the Milo eco
 2. Copy all files from this folder into that repository root.
 3. Ensure production URL values are set (already configured in this repo):
    - `https://storytellingsurvivor-debug.github.io/Milo-Story/` in `index.html`
+   - `https://storytellingsurvivor-debug.github.io/Milo-Story/en/` in `en/index.html`
+   - `https://storytellingsurvivor-debug.github.io/Milo-Story/fr/` in `fr/index.html`
    - `https://storytellingsurvivor-debug.github.io/Milo-Story/sitemap.xml` in `robots.txt`
-   - `https://storytellingsurvivor-debug.github.io/Milo-Story/` in `sitemap.xml`
+   - all root/EN/FR URLs in `sitemap.xml` including alternate `hreflang` links
 4. Commit and push.
 5. In GitHub repo settings, enable GitHub Pages (branch: `main`, folder: `/root`).
 
 ## Post-Publish SEO Checklist
 
 - Open `https://storytellingsurvivor-debug.github.io/Milo-Story/` and verify page loads.
+- Open `https://storytellingsurvivor-debug.github.io/Milo-Story/en/` and verify English page loads.
+- Open `https://storytellingsurvivor-debug.github.io/Milo-Story/fr/` and verify French page loads.
 - Confirm canonical URL matches the published URL.
+- Confirm EN/FR pages include reciprocal `hreflang` tags plus `x-default`.
 - Verify `https://storytellingsurvivor-debug.github.io/Milo-Story/robots.txt` and `https://storytellingsurvivor-debug.github.io/Milo-Story/sitemap.xml` are reachable.
 - Verify favicon loads at `https://storytellingsurvivor-debug.github.io/Milo-Story/favicon-forever.ico` and appears in the browser tab.
 - Submit page URL and sitemap in Google Search Console.
