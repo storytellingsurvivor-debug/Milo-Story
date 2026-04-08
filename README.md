@@ -5,6 +5,7 @@ This folder contains a standalone, single-page SEO landing page for the Milo eco
 ## Files Included
 
 - `index.html`: long-form English page with semantic HTML, inline CSS, metadata, and JSON-LD
+- `favicon-forever.ico`: browser tab icon used by the landing page
 - `robots.txt`: crawler directives with sitemap reference
 - `sitemap.xml`: single-URL sitemap for the landing page
 
@@ -41,17 +42,18 @@ This folder contains a standalone, single-page SEO landing page for the Milo eco
 
 1. Create or open your separate repository for the landing page.
 2. Copy all files from this folder into that repository root.
-3. Replace placeholder URL values:
-   - `https://your-subdomain.github.io/` in `index.html`
-   - `https://your-subdomain.github.io/sitemap.xml` in `robots.txt`
-   - `https://your-subdomain.github.io/` in `sitemap.xml`
+3. Ensure production URL values are set (already configured in this repo):
+   - `https://storytellingsurvivor-debug.github.io/Milo-Story/` in `index.html`
+   - `https://storytellingsurvivor-debug.github.io/Milo-Story/sitemap.xml` in `robots.txt`
+   - `https://storytellingsurvivor-debug.github.io/Milo-Story/` in `sitemap.xml`
 4. Commit and push.
 5. In GitHub repo settings, enable GitHub Pages (branch: `main`, folder: `/root`).
 
 ## Post-Publish SEO Checklist
 
-- Open `https://your-subdomain.github.io/` and verify page loads.
+- Open `https://storytellingsurvivor-debug.github.io/Milo-Story/` and verify page loads.
 - Confirm canonical URL matches the published URL.
-- Verify `https://your-subdomain.github.io/robots.txt` and `/sitemap.xml` are reachable.
+- Verify `https://storytellingsurvivor-debug.github.io/Milo-Story/robots.txt` and `https://storytellingsurvivor-debug.github.io/Milo-Story/sitemap.xml` are reachable.
+- Verify favicon loads at `https://storytellingsurvivor-debug.github.io/Milo-Story/favicon-forever.ico` and appears in the browser tab.
 - Submit page URL and sitemap in Google Search Console.
 - Track branded queries and iterate content monthly.

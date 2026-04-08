@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://your-subdomain.github.io/sitemap.xml
+Sitemap: https://storytellingsurvivor-debug.github.io/Milo-Story/sitemap.xml
